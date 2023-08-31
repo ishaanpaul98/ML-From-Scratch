@@ -10,7 +10,7 @@ class LinearRegression:
     def fit(self, X, y):
         #Init parameters
         n_samples, n_features = X.shape
-        self.weights = np.zeroes(n_features)
+        self.weights = np.zeros(n_features)
         self.bias = 0
         for i in range(self.n_iters):
             y_predicted = np.dot(X, self.weights) + self.bias
