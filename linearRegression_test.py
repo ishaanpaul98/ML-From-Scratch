@@ -13,7 +13,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 #print(X_train.shape)
 #print(y_train.shape)
 
-from lr import LinearRegression
+from linearRegression import LinearRegression
 lr = LinearRegression(lr = 0.01)
 lr.fit(X_train, y_train)
 predicted = lr.predict(X_test)
