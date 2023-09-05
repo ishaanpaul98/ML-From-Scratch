@@ -35,7 +35,7 @@ class naiveBayes:
 
     def _probabilityDensityFunction(self, class_index, x):
         mean = self._mean[class_index]
-        var = self.var[class_index]
+        var = self._var[class_index]
         numerator = np.exp(- (x-mean)**2 / (2 * var))
         denominator = np.sqrt(2 * np.pi * var)
         return numerator / denominator
