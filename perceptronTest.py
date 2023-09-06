@@ -26,6 +26,8 @@ x0_2 = np.amax(X_train[:,0])
 x1_1 = (-perc.weights[0] * x0_1 - perc.bias / perc.weights[1])
 x1_2 = (-perc.weights[0] * x0_2 - perc.bias / perc.weights[1])
 
+ax.plot([x0_1, x0_2], [x1_1, x1_2], 'k')
+
 ymin = np.amin(X_train[:, 1])
 ymax = np.amax(X_train[:, 1])
 
